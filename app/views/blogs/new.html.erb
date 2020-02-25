@@ -1,0 +1,13 @@
+<br />
+<div class="booyah-box col-10 offset-1">
+  <h1>Add a new event</h1>
+  <%= simple_form_for @event, url: blog_events_path do |f| %>
+    <%= f.input :location %>
+    <%= f.input :date %>
+    <%= f.input :description %>
+    <br />
+    <%= f.submit "Create", class: 'btn btn-primary' %>
+    <br />
+  <% end %>
+  <br />
+</div>

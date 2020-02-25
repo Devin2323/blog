@@ -5,4 +5,8 @@ class BlogsController < ApplicationController
 
   def show
   end
+
+  def new
+    @event = Event.new
+  end
 end
